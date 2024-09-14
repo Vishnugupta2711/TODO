@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Task - <%= title %></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen bg-zinc-900">
+    <h1 class="text-center text-white py-4 bg-zinc-800 cursor-pointer">Edit Task</h1>
+    
+    <div class="main flex-grow w-full flex flex-col items-center">
+        <div class="form p-6 text-white w-full max-w-lg">
+            <form action="/edit/<%= title.split(' ').join('') %>.txt" method="POST">
+                <label for="title" class="sr-only">Title</label>
+                <input id="title" name="title" class="block w-full rounded-md outline-none py-2 resize-none bg-zinc-800 mt-2 p-4" type="text" value="<%= title %>" disabled>
+                
+                <label for="details" class="sr-only">Task Details</label>
+                <textarea id="details" name="details" class="block w-full rounded-md outline-none resize-none py-2 bg-zinc-800 mt-2 p-4" required><%= details %></textarea>
+                
+                <input class="mt-4 bg-blue-600 hover:bg-blue-400 text-white px-5 rounded-md py-2 cursor-pointer w-full" type="submit" value="Update Task">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
+

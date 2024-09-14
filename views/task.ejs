@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        footer {
+            background-color: #27272a;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="task-details w-full min-h-screen bg-zinc-900 flex flex-col items-center text-white">
+        <div class="content w-full max-w-lg p-6 mt-10 bg-zinc-800 rounded-md">
+            <h1 class="text-2xl mb-4"><%= title %></h1>
+            <p class="text-lg"><%= details %></p>
+        </div>
+        <a href="/" class="mt-6 text-blue-500">Back to Tasks</a>
+    </div>
+    <footer class="bg-zinc-800 text-white text-center py-4"></footer>
+        © 2024 TODO BY VISHNU GUPTA
+    </footer>
+</body>
+</html>

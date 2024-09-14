@@ -1,0 +1,18 @@
+{
+    "name": "pracrtice-express1",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "ejs": "^3.1.10",
+        "express": "^4.21.0",
+        "node": "^22.8.0"
+    }
+}
